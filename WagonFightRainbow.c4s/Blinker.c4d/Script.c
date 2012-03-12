@@ -1,16 +1,16 @@
-/* Auswahlpfeil für Zauber mit Objektziel */
+/* Auswahlpfeil fï¿½r Zauber mit Objektziel */
 
 #strict
 
-func Initialize()
+public func Initialize()
 {
-SetAction("Arrow");
-ScheduleCall(this(),"Remove",25,0);
+	SetAction("Arrow");
+	ScheduleCall(this, "Remove", 25, 0);
 }
 
-func Remove()
+public func Remove()
 {
-var brand=CreateObject(FBMP,0,0,-1);
-SetYDir(10,brand);
-RemoveObject();
+	var brand = CreateObject(FBMP, 0, 0, -1);
+	SetYDir(10, brand);
+	RemoveObject();
 }

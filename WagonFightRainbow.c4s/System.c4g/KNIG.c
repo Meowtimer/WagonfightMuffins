@@ -3,8 +3,8 @@
 #strict
 #appendto KNIG
 
-func ContextAntiStuck()
+public func ContextAntiStuck()
 {
-    [Anti Stuck|Image=STUC]
-    FindObject(STUC)->Activate(GetOwner());
+	[Anti Stuck|Image=STUC]
+	FindObject(STUC)->Activate(GetOwner());
 }

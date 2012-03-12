@@ -72,7 +72,7 @@ public func Menu()
 
 public func Normal()
 {
-	return ;
+	return;
 }
 
 public func Doof()
@@ -110,9 +110,7 @@ public func RelaunchPlayer(iPlr, object iClonk, int iRelaunchs, iKiller, int iKi
 			LocalN("Kills", GetCrew(iKiller))++;
 			InitScoreboard(iKiller);
 		}
-	//if(iKiller!=NO_OWNER || iKiller==iPlr || GetPlayerTeam(iKiller) == GetPlayerTeam(iPlr)) { LocalN("Kills",GetCursor(iKiller))--; InitScoreboard(iKiller); } 
-	
-	var i;
+	//if(iKiller!=NO_OWNER || iKiller==iPlr || GetPlayerTeam(iKiller) == GetPlayerTeam(iPlr)) { LocalN("Kills",GetCursor(iKiller))--; InitScoreboard(iKiller); }
 	if (iKiller == NO_OWNER || iKiller == iPlr)
 		if (LocalN("Relaunchs", iClonk) == 2)
 		{
@@ -225,9 +223,11 @@ global func Position()
 	var y;
 	var base = 60;
 	var i = Random(7);
-	for (var _ = 1; _ <= 8; _++) {
-		if (!i--) {
-			y = base*_;
+	for (var _ = 1; _ <= 8; _++)
+	{
+		if (!i--)
+		{
+			y = base * _;
 			break;
 		}
 	}
@@ -282,7 +282,7 @@ global func InitScoreboard(int iPlr, bool Erase, int iKills)
 		
 		SortScoreboard(3, 1);
 		SortScoreboard(2);
-		return ;
+		return;
 	}
 	
 	SetScoreboardData(iPlr, 1, Format("%s", GetTaggedPlayerName(iPlr)), 0);
