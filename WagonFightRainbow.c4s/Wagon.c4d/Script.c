@@ -108,7 +108,7 @@ public func Damage(iDmg, int iTyp)
 
 public func Do()
 {
-	CastObjects2(FLNT, 7, 15, 0, 0, GetController());
+	CastObjects2(MUFN, 7, 15, 0, 0, GetController());
 	CastParticles("Splinter", 3, 70, 0, 0, 70, 120, RGB(250, 250, 250), RGB(250, 250, 250));
 	Explode(15);
 	for (var obj in FindObjects(Find_AtRect(-24, -18, 48, 36))) 
