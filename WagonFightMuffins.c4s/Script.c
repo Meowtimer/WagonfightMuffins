@@ -11,7 +11,7 @@ public func Initialize()
 		if (wag)
 			wag->Set(dir);
 	}
-	
+		
 	for (var i; i < 50; i++)
 	{
 		var wag = CreateObject(WAGN, Random(LandscapeWidth() / 3), Position(), -1)->Set(dir);

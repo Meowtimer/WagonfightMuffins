@@ -137,7 +137,7 @@ protected func RndObjectID(bool fMiddle, y)
 	// Normale Objekte
 	r = Random(13);
 	if (!r)
-		return FLNT;
+		return MUFN;
 	if (!--r)
 		return SFLN;
 	if (!--r)
